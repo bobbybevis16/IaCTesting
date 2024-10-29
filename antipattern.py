@@ -26,7 +26,7 @@ class AntiPatternObserver(ABC):
 
 
 
-    
+# This is a test for Workshop 9 and was made by Bobby.   
 class AntiPatternObservable():
     
     def __init__(self):
