@@ -16,7 +16,7 @@ def main():
     
     
     project_name = input ("Please enter the project name: ")
-    print(project_name)
+    print(project)
     
     print("Testing branch")
     
