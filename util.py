@@ -44,20 +44,21 @@ class Util:
     def __traverse(self, base_dir):
         
         for (dirpath, dirnames, filenames) in os.walk(base_dir):
-#            for filename in filenames:
-#                
-#                if filename == "tox.ini": 
-#                    print(filename)
-#                    self.__write_to_arr(os.path.normpath(os.path.join(base_dir, dirpath, filename)))
-#                    pass
-            
-            for dirname in dirnames:
-                if dirname == "tests":
-                    test_path = os.path.join(dirpath, dirname)
+            for filename in filenames:
+                
+                if filename == "tox.ini": 
+                    print(filename)
+                    self.__write_to_arr(os.path.normpath(os.path.join(base_dir, dirpath, filename)))
                     
-                    for (testdirpath, testdirnames, testfilenames) in os.walk(test_path):
-                        for testfile in testfilenames:
-                            self.__write_to_arr(os.path.normpath(os.path.join(test_path,testdirpath, testfile)))
+                    pass
+            
+ #           for dirname in dirnames:
+ #               if dirname == "tests":
+ #                   test_path = os.path.join(dirpath, dirname)
+                    
+ #                   for (testdirpath, testdirnames, testfilenames) in os.walk(test_path):
+ #                       for testfile in testfilenames:
+ #                           self.__write_to_arr(os.path.normpath(os.path.join(test_path,testdirpath, testfile)))
 
 
 
