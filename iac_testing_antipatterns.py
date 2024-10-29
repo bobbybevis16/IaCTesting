@@ -22,7 +22,7 @@ from util import Util
 
 class IaCTestingAntipatterns:
     
-    def __init__(self, files, project_name):
+    #def __init__(self, files, project_name):
         self._project_name = project_name
         self.__files = files
         self.__skip_linting_yaml_detector = SkipLintingYamlDetector()
